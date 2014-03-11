@@ -10,4 +10,8 @@ class KeyValueStore
   def get_store
     @hash
   end
+
+  def get_value(key)
+    @hash[key]
+  end
 end
