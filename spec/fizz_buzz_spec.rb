@@ -19,5 +19,9 @@ describe FizzBuzz do
     expected = [1 ,2, "Fizz", 4, "Buzz", "Fizz", 7, 8 ,"Fizz", "Buzz"]
     expect(fizzbuzz.print_array).to eq expected
   end
-  it "replaces all multiples of both 3 and 5 with FizzBuzz"
+  it "replaces all multiples of both 3 and 5 with FizzBuzz" do
+    fizzbuzz = FizzBuzz.new(15)
+    expected = [1 ,2, "Fizz", 4, "Buzz", "Fizz", 7, 8 ,"Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+    expect(fizzbuzz.print_array).to eq expected
+  end
 end

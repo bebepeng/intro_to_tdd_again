@@ -8,6 +8,8 @@ class FizzBuzz
     i = 0
     nums.each do |n|
       case
+        when n % 3 == 0 && n % 5 == 0
+          nums[i] = "FizzBuzz"
         when n % 3 == 0
           nums[i] = "Fizz"
         when n % 5 == 0
