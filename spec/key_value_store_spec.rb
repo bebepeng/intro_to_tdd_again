@@ -13,6 +13,10 @@ describe KeyValueStore do
     expected = 2
     expect(@kvs.get_value(1)).to eq expected
   end
-  it "deletes a key, and when you get that key it returns 0"
+  it "deletes a key, and when you get that key it returns nil" do
+    @kvs.delete(1)
+    expected = nil
+    expect(@kvs.get_value(1)).to eq expected
+  end
   it "gets a list of keys"
 end
