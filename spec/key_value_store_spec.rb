@@ -18,5 +18,9 @@ describe KeyValueStore do
     expected = nil
     expect(@kvs.get_value(1)).to eq expected
   end
-  it "gets a list of keys"
+  it "gets a list of keys" do
+    @kvs.add(3,4)
+    expected = [1, 3]
+    expect(@kvs.list_keys).to eq expected
+  end
 end

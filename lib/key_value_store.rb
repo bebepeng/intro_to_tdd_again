@@ -18,4 +18,8 @@ class KeyValueStore
   def delete(key)
     @hash.delete(key)
   end
+
+  def list_keys
+    @hash.keys
+  end
 end
