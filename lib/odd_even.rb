@@ -5,7 +5,7 @@ class OddEven
       if x % 2 ==0
         'Even'
       else
-        x
+        'Odd'
       end
     end
   end
