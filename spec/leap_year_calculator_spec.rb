@@ -10,5 +10,7 @@ describe LeapYearCalculator do
   it "correctly tells me it's not a leap year" do
     expect(@calc.yes?(2001)).to eq false
   end
-  it "tells me it's not a leap year if it's only divisible by 100"
+  it "tells me it's not a leap year if it's only divisible by 100" do
+    expect(@calc.yes?(1900)).to eq false
+  end
 end
