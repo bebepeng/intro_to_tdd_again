@@ -1,5 +1,10 @@
 class StringCalculator
   def add(num)
-    num.to_i
+    sum = 0
+    arr = num.split(",")
+    arr.each do |x|
+      sum += x.to_i
+    end
+    sum
   end
 end
