@@ -15,4 +15,9 @@ describe NumericCalculator do
     @calc.save(9)
     expect(@calc.get).to eq 9
   end
+  it "clears the memory" do
+    @calc.save(10)
+    @calc.clear
+    expect(@calc.get).to eq 0
+  end
 end

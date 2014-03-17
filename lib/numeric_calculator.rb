@@ -1,4 +1,8 @@
 class NumericCalculator
+  def initialize
+    @memory = 0
+  end
+
   def add (a , b)
     a + b
   end
@@ -10,5 +14,8 @@ class NumericCalculator
   end
   def get
     @memory
+  end
+  def clear
+    @memory = 0
   end
 end
