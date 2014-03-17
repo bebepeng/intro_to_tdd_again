@@ -5,4 +5,10 @@ class NumericCalculator
   def subtract (a, b)
     a - b
   end
+  def save (value)
+    @memory = value
+  end
+  def get
+    @memory
+  end
 end
